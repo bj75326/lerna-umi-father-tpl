@@ -1,0 +1,11 @@
+{
+  "packages": ["packages/*"],
+  "npmClient": "tyarn",
+  "version": "independent",
+  "useWorkspaces": true,
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    }
+  }
+}

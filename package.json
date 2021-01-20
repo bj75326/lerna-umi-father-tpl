@@ -1,0 +1,56 @@
+{
+  "name": "lerna-umi-father-tpl",
+  "private": true,
+  "decription": "lerna + yarn workspaces monorepo tpl, use father as building tool and umi for component development",
+  "scripts": {
+    "build": "lerna run --stream --sort build",
+    "clean": "tyarn workspaces run clean",
+    "start": "tyarn workspace pk01 start",
+    "build:pk02": "tyarn workspace pk02 run build",
+    "test": "tyarn workspaces run test",
+    "coverage": "tyarn workspaces run coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "antd": "^4.10.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.20",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "eslint": "^7.18.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-unicorn": "^26.0.1",
+    "father": "^2.30.1",
+    "gh-pages": "^3.1.0",
+    "lerna": "^3.22.1",
+    "less": "^4.1.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "@types/react": "^16.14.2"
+  }
+}

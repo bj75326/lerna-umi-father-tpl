@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+/npm-debug.log*
+/yarn-error.log
+/yarn.lock
+/package-lock.json
+
+# production
+/dist
+/es
+/lib
+.doc
+
+# misc
+.DS_Store
+
+# pk01
+/packages/pk01/src/.umi
+/packages/pk01/src/.umi-production
+/packages/pk01/src/.umi-test
+/packages/pk01/.env
+
+# pk02
+/packages/pk02/es
+/packages/pk02/lib

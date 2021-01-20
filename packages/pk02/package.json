@@ -1,0 +1,18 @@
+{
+  "name": "pk02",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "father build --watch",
+    "clean": "rimraf node_modules es lib",
+    "test": "father test",
+    "coverage": "father test --coverage"
+  },
+  "main": "es/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5"
+  },
+  "license": "MIT"
+}

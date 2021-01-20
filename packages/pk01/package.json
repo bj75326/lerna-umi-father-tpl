@@ -1,0 +1,31 @@
+{
+  "name": "pk01",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "clean": "rm -rf node_modules src/.umi src/.umi-production dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "pk02": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@umijs/plugin-antd": "^0.9.1",
+    "@umijs/plugin-dva": "^0.9.1",
+    "@umijs/plugin-helmet": "^1.1.1",
+    "@umijs/plugin-locale": "^0.10.5",
+    "@umijs/plugin-request": "^2.5.2",
+    "@umijs/test": "^3.3.3",
+    "umi": "^3.3.3",
+    "vfile-message": "^2.0.4",
+    "yorkie": "^2.0.0"
+  }
+}
