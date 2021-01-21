@@ -5,8 +5,8 @@ Lerna + yarn workspaces monorepo tpl, use father as building tool and umi for co
 ## done
 
 * ✔︎ Lerna + yarn workspaces 管理所有 package
-* ✔︎ 基于 umi 开发展示页并且部署到gh-page
-* ✔︎ 基于 father 构建 component 的代码
+* ✔︎ 基于 [umi](https://umijs.org/) 开发展示页并且部署到gh-page
+* ✔︎ 基于 [father](https://github.com/umijs/father) 构建 component 的代码
 * ✔︎ 支持 eslint 
 * ✔︎ 加入 prettier
 * ✔︎ 支持 jest 单元测试

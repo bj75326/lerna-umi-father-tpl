@@ -8,17 +8,22 @@
     "start": "tyarn workspace pk01 start",
     "build:pk02": "tyarn workspace pk02 run build",
     "test": "tyarn workspaces run test",
-    "coverage": "tyarn workspaces run coverage"
+    "coverage": "tyarn workspaces run coverage",
+    "lint": "eslint --ext .js,.ts,.tsx ./"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
-      "prettier --write"
+      "prettier --write",
+      "eslint"
     ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write"
+      "prettier --parser=typescript --write",
+      "eslint"
     ]
   },
   "dependencies": {
@@ -32,6 +37,7 @@
     "@types/jest": "^26.0.20",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@umijs/fabric": "^2.5.6",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^7.18.0",
@@ -41,6 +47,7 @@
     "eslint-plugin-unicorn": "^26.0.1",
     "father": "^2.30.1",
     "gh-pages": "^3.1.0",
+    "husky": "^4.3.8",
     "lerna": "^3.22.1",
     "less": "^4.1.0",
     "lint-staged": "^10.0.7",
