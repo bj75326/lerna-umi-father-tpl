@@ -19,11 +19,11 @@
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write",
-      "eslint"
+      "lint"
     ],
     "*.ts?(x)": [
       "prettier --parser=typescript --write",
-      "eslint"
+      "lint"
     ]
   },
   "dependencies": {
