@@ -11,10 +11,8 @@
     "coverage": "tyarn workspaces run coverage",
     "lint": "eslint --ext .js,.ts,.tsx ./"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint"
-    }
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
