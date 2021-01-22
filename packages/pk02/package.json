@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "father build --watch",
-    "clean": "rimraf node_modules es lib",
+    "clean": "rm -rf node_modules es lib",
     "test": "father test",
     "coverage": "father test --coverage"
   },

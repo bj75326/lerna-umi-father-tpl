@@ -4,22 +4,26 @@
   "decription": "lerna + yarn workspaces monorepo tpl, use father as building tool and umi for component development",
   "scripts": {
     "build": "lerna run --stream --sort build",
-    "clean": "tyarn workspaces run clean",
+    "clean": "tyarn workspaces run clean && rm -rf node_modules yarn.lock",
     "start": "tyarn workspace pk01 start",
     "build:pk02": "tyarn workspace pk02 run build",
     "test": "tyarn workspaces run test",
     "coverage": "tyarn workspaces run coverage",
     "lint": "eslint --ext .js,.ts,.tsx ./"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
-      "prettier --write"
+      "prettier --write",
+      "yarn lint"
     ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write"
+      "prettier --parser=typescript --write",
+      "yarn lint"
     ]
   },
   "dependencies": {
@@ -45,7 +49,7 @@
     "gh-pages": "^3.1.0",
     "husky": "^4.3.8",
     "lerna": "^3.22.1",
-    "less": "^4.1.0",
+    "less": "^3.10.3",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
     "typescript": "^4.1.3"
