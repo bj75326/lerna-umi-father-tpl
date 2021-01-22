@@ -1,4 +1,4 @@
-# lerna-um-father-tpl
+# lerna-umi-father-tpl
 
 Lerna + yarn workspaces monorepo tpl, use father as building tool and umi for component development
 
