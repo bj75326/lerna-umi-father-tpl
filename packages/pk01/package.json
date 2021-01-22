@@ -7,9 +7,6 @@
     "build": "umi build",
     "clean": "rm -rf node_modules src/.umi src/.umi-production dist"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
     "classnames": "^2.2.6",
     "pk02": "1.0.0"
