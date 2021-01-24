@@ -1,0 +1,8 @@
+# pk01
+/packages/pk01/src/.umi*
+/packages/pk01/.env
+/packages/pk01/dist
+
+# other packages
+/packages/*/es
+/packages/*/lib

@@ -1,8 +1,8 @@
 import React from 'react';
-import HelloWorld from 'pk02';
+import HelloWorld from '@lerna-umi-father-tpl/pk02';
 
-export interface HelloUmiProps {}
+export interface HelloUmiProps {} // eslint-disable-line
 
-const HelloUmi: React.FC<HelloUmiProps> = (props) => <HelloWorld />;
+const HelloUmi: React.FC<HelloUmiProps> = () => <HelloWorld />;
 
 export default HelloUmi;

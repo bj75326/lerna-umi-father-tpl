@@ -1,8 +1,9 @@
 {
-  "name": "pk02",
+  "name": "@lerna-umi-father-tpl/pk02",
   "version": "1.0.0",
   "scripts": {
-    "build": "father build --watch",
+    "build": "father build",
+    "build:watch": "father build --watch",
     "clean": "rm -rf node_modules es lib",
     "test": "father test",
     "coverage": "father test --coverage"
@@ -13,6 +14,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   },
   "license": "MIT"
 }

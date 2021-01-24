@@ -16,11 +16,10 @@
 .DS_Store
 
 # pk01
-/packages/pk01/src/.umi
-/packages/pk01/src/.umi-production
-/packages/pk01/src/.umi-test
+/packages/pk01/src/.umi*
 /packages/pk01/.env
+/packages/pk01/dist
 
-# pk02
-/packages/pk02/es
-/packages/pk02/lib
+# other packages
+/packages/*/es
+/packages/*/lib
