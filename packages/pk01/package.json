@@ -1,6 +1,6 @@
 {
   "name": "@lerna-umi-father-tpl/pk01",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "start": "umi dev",
@@ -8,7 +8,7 @@
     "clean": "rm -rf node_modules src/.umi src/.umi-production dist"
   },
   "dependencies": {
-    "@lerna-umi-father-tpl/pk02": "^1.0.1",
+    "@lerna-umi-father-tpl/pk02": "^1.0.2",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
