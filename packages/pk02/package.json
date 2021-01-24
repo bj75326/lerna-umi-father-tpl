@@ -19,5 +19,6 @@
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "7932a4b9b6682eb899143a22f3ef855ab3315948"
 }
