@@ -5,12 +5,12 @@
   "scripts": {
     "build": "lerna run --stream --sort build",
     "clean": "tyarn workspaces run clean && rm -rf node_modules yarn.lock",
-    "start": "tyarn workspace pk01 start",
-    "build:pk02": "tyarn workspace pk02 run build:watch",
+    "start": "tyarn workspace @lerna-umi-father-tpl/pk01 start",
+    "build:pk02": "tyarn workspace @lerna-umi-father-tpl/pk02 run build:watch",
     "test": "tyarn workspaces run test",
     "coverage": "tyarn workspaces run coverage",
     "lint": "eslint --ext .js,.ts,.tsx ./",
-    "gh-pages": ""
+    "gh-pages": "tyarn workspace @lerna-umi-father-tpl/pk01 run build && gh-pages -d packages/pk01/dist"
   },
   "husky": {
     "hooks": {

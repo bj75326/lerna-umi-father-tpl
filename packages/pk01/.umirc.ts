@@ -18,6 +18,8 @@ export default defineConfig({
   //   default: 'zh-CN',
   //   baseNavigator: true,
   // },
+  publicPath:
+    process.env.NODE_ENV === 'production' ? '/lerna-umi-father-tpl/' : '/',
   ignoreMomentLocale: true,
   // publicPath: process.env.NODE_ENV === 'production' ? '/eeeditor/' : '/',
   // extraBabelPlugins: [

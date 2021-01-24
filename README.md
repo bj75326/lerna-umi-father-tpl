@@ -10,14 +10,14 @@ Lerna + yarn workspaces monorepo tpl, use father as building tool and umi for co
 * ✔︎ 支持 eslint 
 * ✔︎ 加入 prettier
 * ✔︎ 支持 jest 单元测试
+* ✔︎ 根据 commit 信息生成 changelog
 
 ## todo
 
 * .fatherrc.js 还不能继承根目录下的配置，需要单独为每个 package 配置
-* tsconfig.json 还不能继承根目录下的配置，需要为每个 package 配置
-* 根据 commit 信息生成 changelog
+* tsconfig.json 还不能继承根目录下的配置，需要为每个 package 配置，extends 不支持
 * 开发时，需要 watch 模式构建组件代码，这样组件代码的更新会实时反映在 umi HMR 下的页面上，会有延迟
-* 优化完善 script 的命令行
+* 持续优化完善 script 的命令行
 
 ## develop
 
