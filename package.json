@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.ts,.tsx ./",
     "gh-pages": "tyarn workspace @lerna-umi-father-tpl/pk01 run build && gh-pages -d packages/pk01/dist",
     "version": "lerna version --conventional-commits",
-    "publish": "lerna publish from-git --no-verify-access"
+    "publish": "lerna publish from-git --no-verify-access --no-verify-registry"
   },
   "husky": {
     "hooks": {
